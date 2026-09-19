@@ -1,0 +1,6 @@
+{
+  "name": "TruSmile Dental Clinic",
+  "description": "TruSmile Dental Clinic in Dubai Silicon Oasis offers premium cosmetic & general dentistry, Hollywood smiles, veneers, Invisalign, and modern dental care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

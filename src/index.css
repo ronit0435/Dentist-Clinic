@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-gold-50: #FAF6EE;
+  --color-gold-100: #F3ECE0;
+  --color-gold-200: #E7D7C1;
+  --color-gold-300: #D6BD9B;
+  --color-gold-400: #C5A880;
+  --color-gold-500: #B8976C;
+  --color-gold-600: #9E7D52;
+  --color-navy-950: #0C121C;
+  --color-navy-900: #121A26;
+  --color-navy-800: #1C2738;
+  --color-navy-700: #29384E;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #1E252B;
+    background-color: #FAF9F6;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom luxury subtle glows and borders */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C5A880 0%, #A88656 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(18, 26, 38, 0.05), 0 4px 12px -2px rgba(18, 26, 38, 0.02);
+}
+
+.luxury-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(18, 26, 38, 0.09), 0 6px 16px -2px rgba(197, 168, 128, 0.12);
+}
+
